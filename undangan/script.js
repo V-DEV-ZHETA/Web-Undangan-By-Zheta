@@ -1,16 +1,34 @@
-function submitRSVP() {
-    const nameInput = document.getElementById('name');
-    const responseDiv = document.getElementById('response');
+document.getElementById('rsvpForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Mencegah reload halaman
 
-    if (nameInput.value.trim() === '') {
-        responseDiv.textContent = 'Silakan masukkan nama Anda.';
-        responseDiv.style.color = 'red';
+    const name = document.getElementById('name').value;
+    const attending = document.getElementById('attending').value;
+
+    let message;
+    if (attending === 'yes') {
+        message = `Terima kasih, ${name}! Kami senang Anda akan hadir❤️😁`;
     } else {
-        responseDiv.textContent = `Terima kasih, ${nameInput.value}:p Kehadiran Anda telah dikonfirmasi.`;
-        responseDiv.style.color = '#4CAF50';
-        nameInput.value == ''; // Clear the input field after submission
+        message = `Terima kasih, ${name}! Kami akan merindukan Anda😢😊`;
     }
+        
 
-    
+    const responseMessage = document.getElementById('responseMessage');
+    responseMessage.textContent = message;
+    responseMessage.classList.remove('hidden');
+
+    // Mengosongkan form
+    document.getElementById('rsvpForm').reset();
+});
+
+
+const scrollers = document.querySelectorAll(".scroller");
+if (!window.matchMedia("prefers-reduced-motion: reduce)").matches) {
+    addAnimation();
+}
+
+function addAnimation() {
+    scrollers.forEach((scroller) => {
+        scroller.setAttribute("data-animated, true");
+    });
 }
 
