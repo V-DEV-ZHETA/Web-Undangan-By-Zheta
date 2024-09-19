@@ -1,95 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding - Zheta</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  color: #333;
+  margin: auto;
+  padding: 1;
+}
 
-<header>
-    <div class="container1">
-        <img src="HD wallpaper_ Anime, Date A Live, Origami Tobiichi.jpg" alt="Foto Profil" class="profile-pic">
-        <center><h1>WEDDING INVITATION</h1></center>
-       <center><p style="line-height: 1;"></p>ZHETA & ORIGAMI</p></center>
-    </div>
-</header>
+.container1 {
+  height: 23rem;
+  width: 650px;
+  margin: auto;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 5%;
+  text-align: center;
+}
 
-<body>
-    <div class="container">
-        <div class="horizontal-scroll">
-            <div class="photo"
-        </div>
-        <header>
-            <img src="HD wallpaper_ Anime, Date A Live, Origami Tobiichi.jpg" alt="Foto Profil" class="profile-pic">
-            <img src="origami_tobiichi_wallpaper__date_a_live__by_galangcp_dd0r1qu.png" alt="Foto Profil" class="profile-pic">
-            <img src="wallpaperflare.com_wallpaper.jpg" alt="Foto Profil" class="profile-pic">
-            <img src="HD wallpaper_ Anime, Date A Live, Origami Tobiichi.jpg" alt="Foto Profil" class="profile-pic">
-            <img src="origami_tobiichi_wallpaper__date_a_live__by_galangcp_dd0r1qu.png" alt="Foto Profil" class="profile-pic">
-            <img src="wallpaperflare.com_wallpaper.jpg" alt="Foto Profil" class="profile-pic">
-            <img src="HD wallpaper_ Anime, Date A Live, Origami Tobiichi.jpg" alt="Foto Profil" class="profile-pic">
-            <img src="origami_tobiichi_wallpaper__date_a_live__by_galangcp_dd0r1qu.png" alt="Foto Profil" class="profile-pic">
-            <img src="wallpaperflare.com_wallpaper.jpg" alt="Foto Profil" class="profile-pic">
-            <img src="HD wallpaper_ Anime, Date A Live, Origami Tobiichi.jpg" alt="Foto Profil" class="profile-pic">
-            <img src="origami_tobiichi_wallpaper__date_a_live__by_galangcp_dd0r1qu.png" alt="Foto Profil" class="profile-pic">
-            <img src="wallpaperflare.com_wallpaper.jpg" alt="Foto Profil" class="profile-pic">
-            <img src="HD wallpaper_ Anime, Date A Live, Origami Tobiichi.jpg" alt="Foto Profil" class="profile-pic">
-            <img src="origami_tobiichi_wallpaper__date_a_live__by_galangcp_dd0r1qu.png" alt="Foto Profil" class="profile-pic">
-            <img src="wallpaperflare.com_wallpaper.jpg" alt="Foto Profil" class="profile-pic">
-            <img src="HD wallpaper_ Anime, Date A Live, Origami Tobiichi.jpg" alt="Foto Profil" class="profile-pic">
-            <img src="origami_tobiichi_wallpaper__date_a_live__by_galangcp_dd0r1qu.png" alt="Foto Profil" class="profile-pic">
-            <img src="wallpaperflare.com_wallpaper.jpg" alt="Foto Profil" class="profile-pic">
-        </header>
-        </div>
+.container {
+  height: 60rem;
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
 
-        <section class="details">
-            <h2>DETAIL ACARA</h2>
-            <p>Kami dengan bahagia mengundang Anda untuk merayakan hari istimewa kami.</p>
-            <div class="details">
-                <p class="date">Tanggal: 30 Agustus 2024</p>
-                <p class="location">Tempat: Hotel Bumi Senyiur, Jl.Diponegoro No. 123, Samarinda</p>
-            </div>
-            <p>Acara akan dimulai pukul 02:00 WITA.</p>
-            <p>Harap konfirmasi kehadiran Anda sebelum 30 Agustus 2024.</p>
-            <p>Kami sangat menantikan kehadiran Anda di hari bahagia kami!</p>
-            <p>Salam hangat,</p>
-        </section>
+header {
+  background: hsl(45, 100%, 76%);
+  color: #000000;
+  padding: 2rem;
+  box-shadow: #000000;
+  text-align: center;
+}
 
-        <section class="rsvp">
-    <h2>RSVP</h2>
-    <form action="insert.php" method="post">
-        <input type="text" name="name" required placeholder="Masukkan nama Anda">
-        <input type="text" name="message" placeholder="Pesan untuk mempelai - opsional">
-        <select name="attending" required>
-            <option value="">Opsi Kehadiran...</option>
-            <option value="yes">Hadir</option>
-            <option value="no">Tidak Hadir</option>
-            <option value="maybe">Insyaallah</option>
-        </select>
-        
-        <button type="submit">Kirim</button>
-    </form>
-    <div id="responseMessage" class="hidden"></div>
-</section>
+.profile-pic {
+  border-radius: 3%;
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
 
-    <script src="script.js"></script>
+.photo {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  animation: infinite-scroll 120s linear infinite
+  
+}
 
-    <div class="peta">
-        <center><h2>Lokasi</h2></center>
-        <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=117.14822262525561%2C-0.5004911549320976%2C117.14918285608293%2C-0.498101397442143&amp;layer=mapnik&amp;marker=-0.49929627629569806%2C117.14870274066925"
-            style="border: 1px solid black"></iframe><br /><small><a
-                href="https://www.openstreetmap.org/?mlat=-0.49930&amp;mlon=117.14870#map=19/-0.49930/117.14870">KLIK MAPS DISINI</a></small>
-    </div>
-    <center><p><audio controls autoplay>
-            <source src="tokyo.mp3" type="audio/mpeg">
-            Browser Anda Tidak Support, Upgrade Dong!!.
-        </audio></p></center>
+.horizontal-scroll {
+  width: 100;
+  overflow-x: scroll;
+  overflow: hidden;
+  scrollbar-color: transparent transparent;
+  animation-iteration-count: infinite;
+}
 
-        <footer>
-            <p>&copy; 2024 Zheta. All rights reserved.</p>
-        </footer>
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+  
+  
+}
 
-</body>
-</html>
+@keyframes infinite-scroll {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
+h1 {
+  color: #000000;
+}
+
+.details, .rsvp {
+  margin: 20px 0;
+  text-align: left;
+}
+
+label {
+  display: flex;
+  margin: 10px 0 10px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #d63939;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #b02929;
+}
+
+
+.hidden {
+  display: none;
+}
+
+#responseMessage {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #00ff0d;
+  height: 1px;
+  
+}
+
+.peta {
+  text-align: center;
+  color: transparent
+}
+
+iframe {
+  text-align: center;
+  width: 550px;
+  height: 300px;
+  padding: 3px;
+
+}
+
+audio {
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  iframe {
+    text-align: center;
+
+  }
+
+  }
+
+
+.container1{
+  width: 30rem;
+}
+header {
+width: rem;
+  margin: auto;
+  text-align: right;
+  padding: 100p;
+
+}
+
+.container {
+  width: 100rem;
+  margin: auto;
+  text-align: center;
+}
+
